@@ -1,0 +1,157 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href="https://fonts.googleapis.com/css?family=Cute+Font|Do+Hyeon|Gamja+Flower|Stylish&amp;subset=korean" rel="stylesheet">
+<title>LOGIN</title>
+<style>
+
+body{
+	background-image: url("img/BG.png");
+}
+
+#LOGIN{
+	margin: 30px;
+	border-radius: 10px;
+	border:solid 3px #fca17b;
+	width: 500px;
+	height: 700px;
+	margin-top: 80px;
+	padding-top: 60px; 
+		border-style: dotted;
+		background-color:  rgba(227, 242, 243, .5);
+		text-align: center;
+}
+table{
+	border-collapse: collapse;
+
+}
+td,th{
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#btn{
+	width: 80px;
+	height: 50px;
+	border-radius: 5px;
+	margin: 10px;
+}
+#t1{
+
+	font-size: 50px;
+	font-weight: bold;
+	color: #FA7095 ;
+	font-family: 'Do Hyeon', sans-serif;
+	background-color: rgb(235, 242, 156, .8);
+   border: 10px;
+	border:solid 3px #EF4A33;
+
+
+}
+.s1{
+	font-weight: bold;
+	text-decoration:underline;
+
+	color:#DF6C96;
+}
+
+.PAD{
+	padding: 0 10px 0 60px;
+
+}
+
+#IM{
+	text-align: right;
+	padding: 10px 10px 0px 0;
+}
+
+.GR{
+	text-decoration: underline;
+	color:green;
+}
+
+.left{
+	text-align:left;
+	padding-left: 30px; 
+	font-size: 15px;
+}
+
+.right{
+	text-align:right;
+	padding: 30px 30px 10px 0; 
+	font-size: 13px;
+}
+
+.SM{
+ font-size: 13px;
+}
+
+.BOR{
+	border: solid 1px pink;
+	background-color: white;
+	margin-right: 30px; 
+	padding: 10px 30px 10px 30px;
+	color: gray;
+	font-size: 13px;
+}
+
+.btn2{
+	width: 130px;
+	height: 20px;
+	/* border-radius: 10px; */
+	margin: 10px 30px 10px 10px;
+}
+
+#BOX{
+	border: solid 1px pink;
+	background-color: pink;
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+
+<table id="AL" align="center"width="500">
+<tr>
+	<td>
+<p id="LOGIN">
+<table align="center"  border=0>
+	<tr>
+		<th colspan="3" id='t1'>Login</th>
+	</tr>
+		<tr><td colspan="3">&nbsp;</tr>
+	<tr><td colspan="3" class="left">비밀번호와 자동입력 방지문자를 입력해주세요.<br><br>정보보호를 위해 자동입력방지 문자를 합게 입력하셔야 합니다.</tr>
+	<tr><td colspan="3" class="left"><span class="GR"><a href="#"> 앗, 로그인이 안 되나요?</a></span></tr>
+		<tr><td colspan="3" class="right">단체아이디 로그인 방법</tr>
+	<tr>
+		<td class="PAD">ID</td>
+		<td><input type="text"></td>
+		<td rowspan="2"><button id="btn">로그인</button></td>
+	</tr>
+	<tr>
+		<td class="PAD">PW</td>
+		<td><input type="password"></td>
+	</tr>
+	<tr><td colspan="3">&nbsp;</tr>
+	<tr><td colspan="3" class="left"><span class="SM">&nbsp;아래 이미지를 보이는대로 입력해주세요.</span></tr>
+		<tr><td rowspan="2" colspan="2"><img src="img/BIAN.png" width="240"></td><td ><span class="BOR">&nbsp;&nbsp;&nbsp;새로고침&nbsp;&nbsp;&nbsp;</span></td></tr>
+		<tr><td colspan="2"><span class="BOR">음성으로듣기</span></td></tr>
+		<tr><th colspan="2"><input type="text" style="width:240px;"></th><td ><button class="btn2">제출</button></td></tr>
+	<tr><td colspan="3">&nbsp;</tr>
+	<tr><td colspan="3">&nbsp;</tr>
+	<tr>
+		<td colspan="3"><span class='s1'><a href="#" target="_blank" style="color: #DF6C96;" >아이디 / 비밀번호 찾기</a></span></td>
+	</tr>
+	 <tr><td id="IM" colspan="3"><img src="img/LOG.png" width="100"></td></tr>
+</table>
+</p>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
