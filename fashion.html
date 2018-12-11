@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href="https://fonts.googleapis.com/css?family=Cute+Font|Do+Hyeon|Gamja+Flower|Stylish&amp;subset=korean" rel="stylesheet">
+<title>그의 패션</title>
+<style>
+
+#arc{
+	width:300px;
+	height:150px;
+	padding:10px;
+	margin: 80px 0 0 50px;
+	border:0px solid pink;
+}
+
+#arc_BOGA{
+	width:250px;
+	height:150px;
+	padding:10px;
+	margin: 10px 0 0 15px;
+	border:1px solid pink;
+}
+
+
+#clo{
+	width:250px;
+	height:100px;
+	padding:10px;
+	margin: 40px 0 0 80px;
+	border:0px solid pink;
+}
+
+#clo_BOGA{
+	width:250px;
+	height:150px;
+	padding:10px;
+	margin: 10px 0 0 15px;
+	border:1px solid pink;
+}
+
+
+
+body{
+	width: 1920px;
+	margin: 0px auto;
+  background-image: url("img/BG.png");
+} 
+
+.INline
+{
+	list-style-type: none;
+	display:inline; 
+	/*list-style-image: url('img/love.png');*/
+}
+
+a{
+	text-decoration:none;
+	color: #B52D53;
+}
+header{
+    font-family: 'Do Hyeon', sans-serif;
+    width: 1100px;
+	text-align: center;
+	line-height:200%;
+	padding: 100px 0 30px 0;
+	font-weight: bold;
+	margin: 0 auto;
+
+}
+
+*{
+	margin: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+#contents{
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.FT{
+font-family: 'Do Hyeon', sans-serif;
+font-size: 20px;
+font-weight: bold;
+padding-left: 10px; 
+}
+
+.right{
+	text-align:right;
+	padding: 0 10px 0 0;
+}
+
+.left{
+	text-align:left;
+	padding: 0 0 0 10px;
+}
+
+
+#Login{
+	float: right;
+    margin: 60px 20px 0 0;
+}
+#SNS{
+	float: left;
+	margin: 50px 0px 0 10px;
+}
+
+
+span{
+	font-size:50px
+}
+
+table{
+	border-collapse: collapse; 
+	align-self: center;
+}
+
+nav,aside{
+    width:300px;
+    height: 560px;
+    float: left;
+    padding: 0 0px 0 0px;
+    margin: 0px 10px;
+	background-color:rgb(255, 255, 255, .5);
+	border:solid 2px pink;
+	text-align: center;
+}
+
+.main{
+	width:440px;
+    height: 560px;
+    float: left;
+    padding: 0 0 0 20px;
+	background-color:rgb(255, 255, 255, .5);
+	border:solid 2px pink;
+	text-align: center;
+	background-image: url('img/mo.png');
+	background-repeat: no-repeat;
+}
+
+section{
+	margin:0 auto;
+	padding: 0px 0 15px 0px;
+	height:700px;
+ }
+
+/*
+footer{
+	width: 1300px;
+	margin: 10px 0 0 410px;
+}
+
+#address{
+	float: left;
+	margin: 10px 0 0 10px;
+}
+
+#custom{
+	float: right;
+	margin: 0px 0px 20px 0px;
+}
+*/
+#intro{
+	font-size:18px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	line-height: 190%
+}
+
+.QZ{
+	padding: 0 0 0 10px;
+}
+
+.Pink{
+	/* font-family: 'Cute Font', sans-serif; */
+	color:#DF6C96;
+	font-weight: bold;
+
+}
+
+.BGP{
+		color:#DF6C96;
+	font-weight: bold;
+	background-color: #A5BA5E;
+	padding: 0 0 0 10px;
+}
+
+.main_contents{
+	background:rgb(225, 246, 163, .5);
+}
+
+#drag1 #drag1-1 #drag1-2{
+	padding: 0px; 
+	float: inherit;
+}
+
+ #drag2 #drag2-1 #drag2-2{
+	padding: 0px; 
+	float: inherit;
+}
+
+</style>
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault(); /*기본동작 방지*/
+}
+
+function drag(ev) { /*옮기기전 요소저장*/
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) { /*어디에다 놓을것인가?*/
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+ 
+</head>
+
+<body>
+<form>
+
+	<header>
+	<a href="index.html" style="text-decoration:none" ><span style="color:#D0154A; font-size:60px; ">민제's</span>
+  <span style="color:#D0241C;">F</span><span style="color:#E2841D;">a</span><span style="color:#F1D323;">s</span><span style="color:#91B622;">h</span><span style="color:#2FB49D;">i</span><span style="color:#2A6BB4;">o</span><span style="color:#652BB4;">n</span><span style="color:#B42DAE;">★</span></a>
+
+<div id="SNS">
+	<a href="#"><img src='img/TW.png'></a>&nbsp;<a href="#"><img src='img/YO.png'></a>
+</div>
+
+<div id="Login">
+	<span class="FT"> <a href="1128+LOgin.html" target="_blank" style="color: #DF6C96;"> 로그인 |</a><a href="1128+Menber.html" target="_blank" style="color: #DF6C96;"> 회원가입 </a></span>
+</div>
+
+</header>
+<div class='clear'></div>
+
+<section id='contents'>
+
+<nav>
+<div id="arc_BOGA" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1"src="img/arc1.png" draggable="true" ondragstart="drag(event)"></div>
+<div id="arc_BOGA" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1-1"src="img/arc4.png" draggable="true" ondragstart="drag(event)"></div>
+<div id="arc_BOGA" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1-2"src="img/arc3.png" draggable="true" ondragstart="drag(event)"></div>
+</nav>
+
+<div class="main">
+<div id="arc" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="clo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<aside>
+<div id="clo_BOGA" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag2"src="img/clo1.png" draggable="true" ondragstart="drag(event)"></div>
+<div id="clo_BOGA" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag2-1"src="img/clo2.png" draggable="true" ondragstart="drag(event)"></div>
+<div id="clo_BOGA" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag2-2"src="img/clo3.png" draggable="true" ondragstart="drag(event)"></div>
+</aside>
+
+<!--
+	<ul>
+    <li class="INline"><span class='main_contents'>dd</span></li>
+	<li class="INline"><span class='main_contents'>dd</span></li>
+	<li class="INline"><span class='main_contents'>dd</span></li></ul>-->
+	</section>
+
+<!--
+<footer>
+<fieldset style="width:1070px; height:70px; background:rgb(182, 218, 227, .5);">
+			<div id='address'>
+				<img src="img/address.png" width="400">
+			</div>
+			<div id='custom'>
+				<a href="index.html"><img src="img/ho.png" width="80"></a> <img src="img/custom.png" width="70">
+			</div>
+</fieldset>
+</footer>
+-->
+
+</body>
+</html>
